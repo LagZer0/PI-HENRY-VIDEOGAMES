@@ -1,0 +1,150 @@
+    /*Contenedor Principal para fijar imagen de fondo y centralizar todo*/
+    .container{
+        background-image: url(../../assets/1303457.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #1a1a1a;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+ /* Contenedor donde va a estar el boton  de inicio*/
+  .wrapper {
+    margin: 350px auto;
+    text-align: center;
+    /* width: 100%; */
+    position: relative;
+    background-color: #0f719e5d;
+    border-radius: 30px;
+    
+  }
+  
+  /* Aqui inicia los estilos delboton y su anmimacion juntoa un hower*/
+  .btn {
+    padding: 15px 100px;
+    margin: 10px 4px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #6098ff;
+    display: block;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  }
+  
+  .btn:hover::before {
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  .btn {
+    top: 3px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    /* font-size: 13px; */
+    text-transform: uppercase !important;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden !important;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: transparent !important;
+    z-index: 10;
+  }
+  
+  .btn:hover {
+    border: 1px solid #000000;
+    color: #80ffd3 !important;
+  }
+  .btn::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #d87525;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+  }
+  
+  .btn::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+    box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+  }
+  .btn:hover::before,
+  .btn:hover::before {
+    opacity: 1;
+    width: 116%;
+  }
+  .btn:hover::after,
+  .btn:hover::after {
+    opacity: 1;
+    width: 120%;
+  }

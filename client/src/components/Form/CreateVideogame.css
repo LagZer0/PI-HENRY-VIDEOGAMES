@@ -1,0 +1,96 @@
+@import url('http://fonts.cdnfonts.com/css/games');
+
+
+#generalForm {
+  background-image: url("https://images2.alphacoders.com/598/598225.jpg");
+  background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla.*/
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+  margin: 0%;
+}
+#form {
+  margin: 0% auto; /* Centramos el formulario */
+  width: 300px; /* Sin ancho no podemos centrar el formulario */
+  padding: 30px;
+  background: linear-gradient(163deg, #46026fc6 0%, #d791e7c7)
+  
+}
+#input{
+
+padding:8px;
+color: rgb(243, 242, 242);
+background-color: transparent;
+
+
+}
+
+#label{
+    color: rgb(254, 251, 251);
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0.529);
+    border-radius: 30px;
+    display: block; /* Ahora los inputs quedan debajo de los label */
+    padding: 3px; /* Separando espacios internos */
+
+}
+#input:focus {
+  text-decoration:underline
+}
+
+#selectform{
+    position: relative;
+    border: 4px solid rgba(3, 249, 200, 0.84);
+    border-radius: 10px;
+    width: 120px;
+    overflow: hidden;
+    background-color: rgba(228, 21, 235, 0.456);
+    margin-left: 30px;
+}
+#botonform{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(243, 243, 243);
+    padding: 3px 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 4px solid rgba(122, 215, 255, 0.84);
+    background: rgba(0, 0, 0, 0.545);
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+#botonform:hover {
+  background: linear-gradient(
+    60deg,
+    #350076,
+    #6d07a0,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+#h2{
+    font-family: 'Games', sans-serif;
+    font-size: 40px;
+    font-family: fantasy;
+    color: rgb(3, 245, 249);
+    text-shadow: 2px 2px 4px black;
+    
+}
+#error{
+  color: red;
+ font-size: 15px;
+ background-color: rgba(0, 0, 0, 0.773);
+ border-radius: 12px;
+}

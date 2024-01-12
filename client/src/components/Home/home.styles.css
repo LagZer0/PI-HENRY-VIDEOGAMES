@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+.HomeGral {
+  background-image: url("../../assets/pngtree-collection-of-colorful-video-game-controllers-picture-image_2667743.jpg");
+  background-size: cover; /*Escala la imagen al mayor tamaño posible sin estirarla.*/
+  background-repeat: no-repeat;
+  background-position:center;
+  width: 100vw;
+  height: 100%;
+  background-attachment: fixed;
+  display:grid;
+  place-items: center;
+}
+.home-title {
+  color: rgb(245, 11, 225);
+  font-family: 'Silkscreen', cursive;
+  font-size: 80px;
+  margin-top: 10px;
+  --interval: 0.5s;
+  display: block;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 3s infinite;
+  text-shadow: 1px 1px 2px black;
+}
+
+@keyframes flicker {
+  50% {
+    color: rgba(26, 116, 243, 0.708);
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+
+
+
+.home-button {
+  width: 140px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* margin-left: 20%; */
+    background-color: rgba(213, 160, 235, 0.836);
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: -3%;
+    margin-bottom: 7%;
+}
+.home-button:hover {
+  background-image:     linear-gradient(
+      to right, 
+      #d417ed,
+      #f4f4f4, 
+      #09f3ad,
+      #005a9e,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+
+.btnCrea {
+    width: 140px;
+    height: 60px;
+    color: #000000;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.84);
+    background-color: rgba(186, 160, 235, 0.836);
+    /* margin-left: 50%; */
+   margin-top: 20px;
+   margin-bottom: 63px;
+  }
+  
+
+  .btnCrea:hover {
+    background-image:     linear-gradient(
+      to right, 
+      #d417ed,
+      #f4f4f4, 
+      #09f3ad,
+      #005a9e,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+    
+  }
+ 
+  .home-selects{
+    display: flex;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    
+  }
+
+  .select {
+    /* display: flex; */
+    position: relative;
+    /* border: 2px solid rgba(0, 0, 0, 0.84); */
+    border-radius: 10px;
+    margin: 30px;
+    width: 150px;
+    /* margin-top: 1%; */
+    background-color: rgba(181, 130, 202, 0.815);
+    /* margin-left: 1500px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* display: flex;
+    flex-direction: column; */
+    /* flex-wrap: wrap; */
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .select:hover {
+    transform: scale(1.2);
+  }
+    .select:before {
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 5px 0 5px;
+      border-color: rgba(0, 110, 255, 0.448) transparent transparent transparent;
+      z-index: 5;
+      pointer-events: none;
+    }
+    .select select {
+      padding: 5px 8px;
+      width: 130%;
+      border: none;
+      box-shadow: none;
+      background-color: linear-gradient(to right, #8e2de2, #4a00e0);
+      background-image: none;
+      appearance: none;
+    }
+    .home-card{
+        width: 100%;
+        /* height: auto; */
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 5%;
+    
+      }
+
+    .pag{
+      border-radius: 5px;
+      border-color: rgba(9, 231, 209, 0.744);
+      background: hsla(289, 82%, 56%, 0.304);
+      color: hsl(198, 75%, 49%);
+      margin: 5px;
+      font-size: 15px;
+      width: 100px;
+      height: 35px;
+      position:relative;
+      bottom: 5 px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 10px;
+      border: 2px solid rgba(122, 215, 255, 0.84);
+      background:linear-gradient(to right, .00b4db, .0083b0);;
+      /* margin-left: 50%; */
+      margin-top: -30px;
+      margin-bottom: 20px;
+  }
+
+  .pag:hover {
+    transform: scale(1.2);
+  }
